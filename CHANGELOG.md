@@ -1,13 +1,8 @@
 # Changelog
 
-All notable changes to the Checkmarx Security MCP Server will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to the Checkmarx Security MCP Server will be documented below.
 
 ---
-
-## [1.0.0] - 2026-06-04
 
 ### Added
 
@@ -77,14 +72,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Integrations
 - Checkmarx One platform (SAST, SCA, KICS, Container Security)
-- Dustico API for supply-chain malicious package detection
 - OpenTelemetry for distributed tracing and structured logging
 
 #### IDE & Client Support
-- Windsurf IDE (API Key and OAuth2)
-- IntelliJ IDEA / GitHub Copilot (API Key)
-- Claude Desktop / Claude Code (API Key)
+- All MCP client which supports API key and OAuth2 with DCR authentication
+- Example: Windsurf, GitHub Copilot, Claude, Cursor etc.
 
----
-
-[1.0.0]: https://github.com/cx-anand-nandeshwar/security-mcp-marketplace/releases/tag/v1.0.0
