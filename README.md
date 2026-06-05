@@ -3,7 +3,6 @@
 
 A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [Checkmarx One](https://checkmarx.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
 
----
 ## Table of Contents
 
 - [Overview](#overview)
@@ -25,8 +24,7 @@ A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.i
   - [Application management](#application-management)
   - [Analytics & risk](#analytics--risk)
   - [Remediation](#remediation)
-  
----
+
 ## Overview
 
 The Checkmarx Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with Checkmarx One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
@@ -44,7 +42,6 @@ Multi-protocol support to facilitate secure and efficient communication between 
 - `sse` (Server-Sent Events): For real-time streaming to web-based clients
 - `http`streamableHttp: HTTP-compatible protocol for stream-based messaging
 
----
 ## Features
 
 
@@ -60,7 +57,7 @@ Multi-protocol support to facilitate secure and efficient communication between 
 | **Enterprise Auth** | JWT (JWKS-verified), OAuth2 token exchange, Redis session caching |
 | **Observability** | Structured logging (zerolog), OpenTelemetry tracing |
 
----
+
 ## Authentication
 
 The server uses **API Key** and **OAuth2** authentication.
@@ -80,7 +77,6 @@ Checkmarx MCP supports Dynamic Client Registration (DCR) flow allows an AI clien
 
 Refer [Authentication](/docs/authentication.md) for detailed authentication instructions and troubleshooting.
 
----
 ## MCP Client Configuration
 
 ### Prerequisites
@@ -139,7 +135,7 @@ Below are examples to add the server to your MCP client configuration. See the [
   }
 }
 ```
----
+
 ## Available Tools
 
 Refer [usage](/docs/usage.md) for detail information.
@@ -194,18 +190,17 @@ Refer [usage](/docs/usage.md) for detail information.
 | `packageRemediation` | Safe upgrade paths for vulnerable open-source packages |
 | `imageRemediation` | Secure base image alternatives for vulnerable container images |
 
----
+
 ## License
 
 Apache 2.0 — see [LICENSE](LICENSE) for details.
 
----
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, module architecture, and contribution guidelines.
 
 Website: [Checkmarx](https://checkmarx.com/).
 
----
 
 © 2026 Checkmarx Ltd. All Rights Reserved.
