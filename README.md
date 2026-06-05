@@ -81,6 +81,8 @@ Checkmarx MCP supports Dynamic Client Registration (DCR) flow allows an AI clien
  
 **Note:** You required valid Checkmarx credentials to get the API Key or connect to the MCP server.
 
+Refer [Authentication](/docs/authentication.md) for detailed authentication instructions and troubleshooting.
+
 ## MCP Client Configuration
 
 ---
@@ -91,7 +93,8 @@ Checkmarx MCP supports Dynamic Client Registration (DCR) flow allows an AI clien
 - API Key (with required access if using API key authentication)
 
 ### JSON Configuration
-Below are examples to add the server to your MCP client configuration:
+Below are examples to add the server to your MCP client configuration.  See the [examples/](../examples/) folder for ready-to-use client config files.
+
 
 #### Windsurf IDE
 
@@ -121,27 +124,6 @@ Below are examples to add the server to your MCP client configuration:
     }
   }
 }
-```
-
-#### IntelliJ IDEA - GitHub Copilot
-
-**API Key Authentication:**
-
-```json
-{
-  "servers" : {
-    "Checkmarx" : {
-      "url": "https://{api_host}/api/security-mcp/mcp/{tenant}",
-      "requestInit": {
-        "headers": {
-          "cx-origin": "Jetbrains",
-          "Authorization": "api-key"
-        }
-      }
-    }
-  }
-}
-
 ```
 
 #### Claude Desktop / Claude Code

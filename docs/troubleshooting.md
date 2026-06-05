@@ -76,7 +76,7 @@ Common issues and solutions when using the Checkmarx Security MCP Server.
 
 **Solution:**
 - Ensure the API key was generated from the correct Checkmarx One tenant.
-- The server validates JWT issuers — if your IAM URL differs from the standard `iam.checkmarx.net`, ask your administrator for the correct `CX_IAM_URL` value.
+- The server validates JWTs based on the tenant's issuer and audience — if these don't match, authentication will fail.
 - API keys have an expiry — re-generate if the key is older than the configured TTL.
 
 ---
