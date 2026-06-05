@@ -1,5 +1,4 @@
 # Checkmarx Security MCP Server
-
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [Checkmarx One](https://checkmarx.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
