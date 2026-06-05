@@ -14,9 +14,6 @@ All notable changes to the Checkmarx Security MCP Server will be documented belo
 #### Authentication
 - API Key authentication via `Authorization` header
 - OAuth2 authentication with Dynamic Client Registration (DCR) support
-- JWT signature verification with JWKS endpoint caching (5-minute TTL)
-- Stale-cache fallback for IAM outage resilience
-- Redis-backed session caching with in-memory fallback
 
 #### Scanning Tools (7 tools)
 - `planScan` — Recommend scan engines before triggering
