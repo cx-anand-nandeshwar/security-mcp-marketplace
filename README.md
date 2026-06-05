@@ -93,8 +93,7 @@ Refer [Authentication](/docs/authentication.md) for detailed authentication inst
 - API Key (with required access if using API key authentication)
 
 ### JSON Configuration
-Below are examples to add the server to your MCP client configuration.  See the [examples/](../examples/) folder for ready-to-use client config files.
-
+Below are examples to add the server to your MCP client configuration. See the [examples/](/examples) folder for ready-to-use client config files.
 
 #### Windsurf IDE
 
