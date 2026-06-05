@@ -32,6 +32,17 @@ API Key authentication is the simplest method. The client passes the API key in 
 
 Pass the API key in the `Authorization` header when configuring your MCP client. See the [examples/](../examples/) folder for ready-to-use client config files.
 
+```json
+{
+    "Checkmarx": {
+      "serverUrl": "https://{api_host}/api/security-mcp/mcp/{tenant}",
+      "headers": {
+        "cx-origin": "<client-name>",
+        "Authorization": "API_KEY"
+      }
+    }
+}
+```
 **Header format:**
 ```
 Authorization: <your-api-key>
@@ -39,9 +50,7 @@ Authorization: <your-api-key>
 
 **How it works internally:**
 - The API key is a JWT issued by Checkmarx IAM.
-- The MCP server extracts the `iss` (issuer) and `azp` claims from the JWT to perform a token exchange at the Checkmarx IAM endpoint.
-- The resulting access token is cached for 120 seconds to avoid repeated exchanges.
-- Tokens are validated against the configured `CX_IAM_URL` to prevent SSRF attacks.
+- The MCP server uses the JWT to perform token validation.
 
 ---
 
