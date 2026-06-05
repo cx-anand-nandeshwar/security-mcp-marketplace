@@ -1,9 +1,14 @@
 # Checkmarx Security MCP Server
 
+---
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [Checkmarx One](https://checkmarx.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
 
----
+
 ## Table of Contents
+
+---
 - [Overview](#overview)
   - [Supported scan engines](#supported-scan-engines)
   - [Supported transport protocols](#supported-transport-protocols)
@@ -24,9 +29,9 @@ A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.i
   - [Analytics & risk](#analytics--risk)
   - [Remediation](#remediation)
 
----
 ## Overview
 
+---
 The Checkmarx Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with Checkmarx One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
 
 ### Supported scan engines:
@@ -42,11 +47,9 @@ Multi-protocol support to facilitate secure and efficient communication between 
 - `sse` (Server-Sent Events): For real-time streaming to web-based clients
 - `http`streamableHttp: HTTP-compatible protocol for stream-based messaging
 
-
+## Features
 
 ---
-
-## Features
 
 | Category | Capabilities |
 |---|---|
@@ -60,10 +63,9 @@ Multi-protocol support to facilitate secure and efficient communication between 
 | **Enterprise Auth** | JWT (JWKS-verified), OAuth2 token exchange, Redis session caching |
 | **Observability** | Structured logging (zerolog), OpenTelemetry tracing |
 
----
-
 ## Authentication
 
+---
 The server uses **API Key** and **OAuth2** authentication.
 
 ### API Key Authentication
@@ -79,10 +81,9 @@ Checkmarx MCP supports Dynamic Client Registration (DCR) flow allows an AI clien
  
 **Note:** You required valid Checkmarx credentials to get the API Key or connect to the MCP server.
 
----
-
 ## MCP Client Configuration
 
+---
 ### Prerequisites
 
 - A Checkmarx One tenant 
@@ -160,10 +161,10 @@ Below are examples to add the server to your MCP client configuration:
   }
 }
 ```
----
 
 ## Available Tools
 
+---
 ### Scanning
 
 | Tool | Description |
@@ -214,15 +215,15 @@ Below are examples to add the server to your MCP client configuration:
 | `packageRemediation` | Safe upgrade paths for vulnerable open-source packages |
 | `imageRemediation` | Secure base image alternatives for vulnerable container images |
 
----
 ## License
 
+---
 Apache 2.0 — see [LICENSE](LICENSE) for details.
 
----
 
 ## Contributing
 
+---
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, module architecture, and contribution guidelines.
 
-Issues and pull requests are welcome at [github.com/Checkmarx/security-mcp](https://github.com/Checkmarx/security-mcp).
+Website: [Checkmarx](https://checkmarx.com/).
