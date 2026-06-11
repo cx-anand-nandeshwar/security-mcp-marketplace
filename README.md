@@ -1,4 +1,4 @@
-# Checkmarx Security MCP Server
+# DLP MCP Server
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [Checkmarx One](https://checkmarx.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
@@ -27,7 +27,7 @@ A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.i
 
 ## Overview
 
-The Checkmarx Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with Checkmarx One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
+The DLP Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with Checkmarx One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
 
 ### Supported scan engines:
 - **SAST** — Static Application Security Testing (30+ languages)
