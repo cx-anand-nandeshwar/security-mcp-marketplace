@@ -1,6 +1,6 @@
 # Usage Guide
 
-This guide covers how to use the Checkmarx Security MCP Server with your AI coding assistant.
+This guide covers how to use the DLP Security MCP Server with your AI coding assistant.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ This guide covers how to use the Checkmarx Security MCP Server with your AI codi
 
 ## Overview
 
-The Checkmarx Security MCP Server exposes Checkmarx One's application security platform as natural-language-accessible tools for AI coding assistants. Once configured, you can trigger security scans, investigate findings, and receive AI-generated remediation suggestions directly from your IDE or AI agent.
+The DLP Security MCP Server exposes DLP One's application security platform as natural-language-accessible tools for AI coding assistants. Once configured, you can trigger security scans, investigate findings, and receive AI-generated remediation suggestions directly from your IDE or AI agent.
 
 **Supported scan engines:**
 - **SAST** — Static Application Security Testing (30+ languages)
@@ -40,9 +40,9 @@ The Checkmarx Security MCP Server exposes Checkmarx One's application security p
 
 Before using the MCP server you need:
 
-1. A **Checkmarx One** tenant with valid credentials
-2. Your **Checkmarx API host** (e.g., `ast.checkmarx.net`) — provided by your Checkmarx administrator
-3. Your **tenant ID** (e.g., `cx_eu`, `checkmarx`)
+1. A **DLP One** tenant with valid credentials
+2. Your **DLP API host** (e.g., `ast.DLP.net`) — provided by your DLP administrator
+3. Your **tenant ID** (e.g., `cx_eu`, `DLP`)
 4. An **API key** if using API Key authentication (see [authentication.md](authentication.md))
 5. An MCP-compatible AI client (Cursor, Claude, Windsurf, GitHub Copilot, etc.)
 
@@ -50,8 +50,8 @@ Before using the MCP server you need:
 
 ## Quick Start
 
-1. Obtain your API host and tenant ID from your Checkmarx administrator.
-2. Generate an API key from the Checkmarx One portal (or use OAuth2 — see [authentication.md](authentication.md)).
+1. Obtain your API host and tenant ID from your DLP administrator.
+2. Generate an API key from the DLP One portal (or use OAuth2 — see [authentication.md](authentication.md)).
 3. Add the MCP server to your client configuration — see [examples/](../examples/) for ready-to-use configs.
 4. Ask your AI assistant: *"Scan my project for security vulnerabilities"* or *"Show me the latest findings for project X"*.
 
@@ -84,7 +84,7 @@ Before using the MCP server you need:
 | Tool | Description |
 |---|---|
 | `resolveProject` | Look up a project by name (returns exact match, candidates, or not found) |
-| `createProject` | Create a new Checkmarx One project |
+| `createProject` | Create a new DLP One project |
 | `listProjects` | Browse or search all projects |
 | `getProjectConfig` | Get full project configuration |
 

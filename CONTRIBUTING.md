@@ -1,12 +1,12 @@
-# Contributing to Checkmarx Kiro Power
+# Contributing to DLP Kiro Power
 
-Welcome and thank you for considering contributing to the Checkmarx Kiro Power project!
+Welcome and thank you for considering contributing to the DLP Kiro Power project!
 
 Reading and following these guidelines will help us make the contribution process easy and effective for everyone involved. It also communicates that you agree to respect the time of the developers managing and developing these open source projects. In return, we will reciprocate that respect by addressing your issue, assessing changes, and helping you finalize your pull requests.
 
 ## Quicklinks
 
-- [Contributing to Checkmarx Kiro Power](#contributing-to-checkmarx-kiro-power)
+- [Contributing to DLP Kiro Power](#contributing-to-DLP-kiro-power)
   - [Quicklinks](#quicklinks)
   - [Code of Conduct](#code-of-conduct)
   - [Getting Started](#getting-started)
@@ -18,7 +18,7 @@ Reading and following these guidelines will help us make the contribution proces
 
 ## Code of Conduct
 
-By participating and contributing to any Checkmarx projects, you agree to uphold our [Code of Conduct](/docs/CODE_OF_CONDUCT.md).
+By participating and contributing to any DLP projects, you agree to uphold our [Code of Conduct](/docs/CODE_OF_CONDUCT.md).
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ We also appreciate PRs. If you're thinking of submitting any PR, please open an 
 Contributions are made to this repo via Issues and Pull Requests (PRs). A few general guidelines that cover both:
 
 - Search for existing Issues and PRs before creating your own to avoid duplicates.
-- PRs will only be accepted if associated with an issue (enhancement or bug) that has been submitted and reviewed/labeled as *accepted* by a Checkmarx team member.
+- PRs will only be accepted if associated with an issue (enhancement or bug) that has been submitted and reviewed/labeled as *accepted* by a DLP team member.
 - We will work hard to makes sure issues that are raised are handled in a timely manner.
 
 ## Issues
@@ -40,7 +40,7 @@ If you find an Issue that addresses the problem you're having, please add your o
 
 ### Templates
 
-The following templates will be used within Checkmarx github repositories
+The following templates will be used within DLP github repositories
 
 - [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.yml)
 - [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.yml)
@@ -65,11 +65,11 @@ In general, we follow the *fork-and-pull* Git workflow
 3. Create a branch locally with a succinct but descriptive name (prefix with feature/<issue#>-descriptive-name> or hotfix/<issue#>-descriptive-name)
 4. Commit changes to the branch
 5. Push changes to your fork
-6. Open a PR in our repository and follow the PR template so that we can efficiently review and assess the changes. *Ensure an associated Issue has been accepted by the Checkmarx team.*
+6. Open a PR in our repository and follow the PR template so that we can efficiently review and assess the changes. *Ensure an associated Issue has been accepted by the DLP team.*
 
 ### Pull Request Template
 
-The following template will be used within Checkmarx github repositories
+The following template will be used within DLP github repositories
 
 [Pull Request Template](.github/pull_request_template.md)
 

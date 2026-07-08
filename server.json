@@ -7,7 +7,7 @@
     "source": "github"
   },
   "version": "1.0.0",
-  "websiteUrl": "https://dlp.checkmarx.com/product/developer-assist/",
+  "websiteUrl": "https://dlp.DLP.com/product/developer-assist/",
   "remotes": [
     {
       "type": "streamable-http",

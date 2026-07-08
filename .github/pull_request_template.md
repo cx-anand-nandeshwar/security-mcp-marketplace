@@ -13,7 +13,7 @@ Describe what changed and why.
 ## Validation
 
 - [ ] I verified docs/links impacted by this change
-- [ ] I validated `checkmarx-power/mcp.json` still contains placeholders (no secrets)
+- [ ] I validated `DLP-power/mcp.json` still contains placeholders (no secrets)
 - [ ] I tested the relevant workflow in Kiro (if applicable)
 
 ## DCO

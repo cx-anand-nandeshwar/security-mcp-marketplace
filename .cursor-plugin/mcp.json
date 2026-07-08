@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "Checkmarx": {
+    "DLP": {
       "url": "https://${env:VAR}/api/security-mcp/mcp/<tenant_id>",
     }
   }

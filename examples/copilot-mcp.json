@@ -1,6 +1,6 @@
 {
   "servers": {
-    "Checkmarx": {
+    "DLP": {
       "url": "https://{api_host}/api/security-mcp/mcp/{tenant}",
       "requestInit": {
         "headers": {

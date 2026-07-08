@@ -1,6 +1,6 @@
 # Authentication
 
-The Checkmarx Security MCP Server supports two authentication methods: **API Key** and **OAuth2 with Dynamic Client Registration (DCR)**.
+The DLP Security MCP Server supports two authentication methods: **API Key** and **OAuth2 with Dynamic Client Registration (DCR)**.
 
 ## Table of Contents
 
@@ -21,12 +21,12 @@ API Key authentication is the simplest method. The client passes the API key in 
 
 ### Obtaining an API Key
 
-1. Log in to your **Checkmarx One** portal.
+1. Log in to your **DLP One** portal.
 2. Navigate to **Access Management** → **API Keys**.
 3. Generate a new API key and copy it.
 4. Keep the key secure — treat it like a password.
 
-> **Note:** You need valid Checkmarx One credentials and sufficient permissions to generate an API key.
+> **Note:** You need valid DLP One credentials and sufficient permissions to generate an API key.
 
 ### Using the API Key
 
@@ -34,7 +34,7 @@ Pass the API key in the `Authorization` header when configuring your MCP client.
 
 ```json
 {
-    "Checkmarx": {
+    "DLP": {
       "serverUrl": "https://{api_host}/api/security-mcp/mcp/{tenant}",
       "headers": {
         "cx-origin": "<client-name>",
@@ -49,7 +49,7 @@ Authorization: <your-api-key>
 ```
 
 **How it works internally:**
-- The API key is a JWT issued by Checkmarx IAM.
+- The API key is a JWT issued by DLP IAM.
 - The MCP server uses the JWT to perform token validation.
 
 ---
@@ -61,8 +61,8 @@ OAuth2 with Dynamic Client Registration (DCR) provides a more seamless login exp
 ### How DCR Flow Works
 
 1. Configure your MCP client with only the server URL (no `Authorization` header needed).
-2. When the client connects to the MCP server for the first time, it is redirected to the **Checkmarx One login page**.
-3. You log in with your Checkmarx credentials.
+2. When the client connects to the MCP server for the first time, it is redirected to the **DLP One login page**.
+3. You log in with your DLP credentials.
 4. Upon successful authentication, the MCP client receives tokens and can start using the tools.
 5. Token refresh is handled automatically by the client.
 
@@ -73,7 +73,7 @@ For OAuth2, your MCP client config only needs the server URL:
 ```json
 {
   "mcpServers": {
-    "Checkmarx": {
+    "DLP": {
       "serverUrl": "https://{api_host}/api/security-mcp/mcp/{tenant}"
     }
   }
@@ -109,4 +109,4 @@ Replace `{api_host}` and `{tenant}` with your values.
 - **SSRF protection** — the server validates all OAuth redirect targets and token issuer URLs against an allowlist to prevent server-side request forgery.
 - **JWT verification** — incoming JWTs are verified against the configured JWKS endpoint. Tokens with unknown issuers are rejected.
 
-For questions about permissions or account setup, contact your Checkmarx administrator.
+For questions about permissions or account setup, contact your DLP administrator.

@@ -1,13 +1,13 @@
 # Changelog
 
-All notable changes to the Checkmarx Security MCP Server will be documented below.
+All notable changes to the DLP Security MCP Server will be documented below.
 
 ---
 
 ### Added
 
 #### Core MCP Server
-- Initial release of the Checkmarx Security MCP Server
+- Initial release of the DLP Security MCP Server
 - Multi-protocol transport support: `stdio`, `sse`, and `http` (streamable HTTP)
 - Modular architecture enabling independent team contributions per module
 
@@ -26,7 +26,7 @@ All notable changes to the Checkmarx Security MCP Server will be documented belo
 
 #### Project Management Tools (4 tools)
 - `resolveProject` — Resolve a project by name (exact match, candidates, or not found)
-- `createProject` — Create a new Checkmarx One project
+- `createProject` — Create a new DLP One project
 - `listProjects` — Browse or search all projects
 - `getProjectConfig` — Retrieve full project configuration
 
@@ -68,7 +68,7 @@ All notable changes to the Checkmarx Security MCP Server will be documented belo
 - **Secret Detection** — Hardcoded credentials, API keys, and tokens
 
 #### Integrations
-- Checkmarx One platform (SAST, SCA, KICS, Container Security)
+- DLP One platform (SAST, SCA, KICS, Container Security)
 - OpenTelemetry for distributed tracing and structured logging
 
 #### IDE & Client Support

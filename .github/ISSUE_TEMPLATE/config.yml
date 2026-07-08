@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 GitHub Discussions
-    url: https://github.com/Checkmarx/security-mcp-marketplace/discussions
+    url: https://github.com/DLP/security-mcp-marketplace/discussions
     about: Ask questions and discuss ideas with the community
   - name: 📚 Documentation
-    url: https://github.com/Checkmarx/security-mcp-marketplace/blob/master/docs/usage.md
+    url: https://github.com/DLP/security-mcp-marketplace/blob/master/docs/usage.md
     about: Read the full Power documentation and workflows
   - name: 🔒 Security Vulnerability
-    url: https://support.checkmarx.com/CheckmarxCustomerServiceCommunity/s/login/
-    about: Report security vulnerabilities to the Checkmarx One Integrations Team via the Support Portal
-  - name: 🆘 Checkmarx Support
-    url: https://support.checkmarx.com/CheckmarxCustomerServiceCommunity/s/
-    about: Get help from Checkmarx support team
+    url: https://support.DLP.com/DLPCustomerServiceCommunity/s/login/
+    about: Report security vulnerabilities to the DLP One Integrations Team via the Support Portal
+  - name: 🆘 DLP Support
+    url: https://support.DLP.com/DLPCustomerServiceCommunity/s/
+    about: Get help from DLP support team
