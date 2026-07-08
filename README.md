@@ -88,7 +88,7 @@ Refer [Authentication](/docs/authentication.md) for detailed authentication inst
 ### JSON Configuration
 Below are examples to add the server to your MCP client configuration. See the [examples/](/examples) folder for ready-to-use client config files.
 
-#### Windsurf IDE
+#### Cursor IDE
 
 **API Key Authentication:**
 
@@ -96,9 +96,9 @@ Below are examples to add the server to your MCP client configuration. See the [
 {
   "mcpServers": {
     "Checkmarx": {
-      "serverUrl": "https://{api_host}/api/security-mcp/mcp/{tenant}",
+      "url": "https://{api_host}/api/security-mcp/mcp/{tenant}",
       "headers": {
-        "cx-origin": "Windsurf",
+        "cx-origin": "Curosr",
         "Authorization": "API_KEY"
       }
     }
@@ -112,7 +112,7 @@ Below are examples to add the server to your MCP client configuration. See the [
 {
   "mcpServers": {
     "Checkmarx": {
-      "serverUrl": "https://{api_host}/api/security-mcp/mcp/{tenant}"
+      "url": "https://{api_host}/api/security-mcp/mcp/{tenant}"
     }
   }
 }
