@@ -1,9 +1,9 @@
 ---
 name: dlp-scan
-description: Scan content for data loss prevention violations using the Checkmarx DLP MCP server
+description: Scan content for data loss prevention violations using the DLP DLP MCP server
 instructions: |
   Use this skill to detect sensitive data, secrets, and compliance violations in code and content.
-  The skill connects to the Checkmarx DLP MCP server to provide real-time security scanning.
+  The skill connects to the DLP DLP MCP server to provide real-time security scanning.
 tags:
   - security
   - dlp
@@ -27,15 +27,17 @@ Invoke this skill when you need to:
 
 ## Configuration
 
-This skill requires the Checkmarx DLP MCP server to be configured via `.mcp.json` with:
+This skill requires the DLP DLP MCP server to be configured via `.mcp.json` with:
 ```json
 {
   "mcpServers": {
-    "Checkmarx": {
-      "url": "https://${env:VAR}/api/security-mcp/mcp/<tenant_id>"
+    "DLP": {
+      "url": "https://${env:VAR}/api/security-mcp/mcp/${env:TENANT}"
     }
   }
 }
 ```
 
-Set the `VAR` environment variable with your Checkmarx API endpoint.
+Set the `VAR` environment variable with your DLP API endpoint.
+
+Set the `TENANT` environment variable with your DLP tenant ID.
