@@ -1,7 +1,7 @@
 # DLP MCP Server
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [Checkmarx One](https://checkmarx.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
+A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects AI coding assistants to [DLP One](https://DLP.com/product/application-security-platform/) — enabling real-time security scanning, vulnerability management, and AI-generated remediation directly inside your IDE or AI agent.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ A production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.i
 
 ## Overview
 
-The DLP Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with Checkmarx One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
+The DLP Security MCP server bridges your AI assistant (Claude, Cursor, Copilot, etc.) with DLP One's enterprise application security platform. It exposes security workflows as natural-language-accessible MCP tools, allowing developers to scan code, investigate findings, and receive context-aware fixes without leaving their development environment.
 
 ### Supported scan engines:
 - **SAST** — Static Application Security Testing (30+ languages)
@@ -50,7 +50,7 @@ Multi-protocol support to facilitate secure and efficient communication between 
 | **Scanning** | Plan, trigger, and monitor multi-engine security scans (CLI or API mode) |
 | **Findings** | List, filter, and inspect vulnerabilities with severity and state tracking |
 | **Remediation** | AI-generated fixes for code vulnerabilities, insecure packages, and container images |
-| **Project Management** | Create, configure, and search Checkmarx One projects |
+| **Project Management** | Create, configure, and search DLP One projects |
 | **Application Management** | Group projects into applications and get org-wide security metrics |
 | **Analytics** | Tenant-wide vulnerability summaries, risk scores, and time-windowed trends |
 | **Supply Chain** | Detect malicious npm/Maven/PyPI/Go/NuGet packages via Dustico integration |
@@ -64,16 +64,16 @@ The server uses **API Key** and **OAuth2** authentication.
 
 ### API Key Authentication
 
-1. Clients authenticate to Checkmarx One and get an API key.
+1. Clients authenticate to DLP One and get an API key.
 2. This API key will be used during MCP client configuration, include the API Key in the `Authorization` header as mentioned in the [MCP Client Configuration](#mcp-client-configuration) section.
 
 ### OAuth2 Authentication
-Checkmarx MCP supports Dynamic Client Registration (DCR) flow allows an AI client (such as Cursor or Claude Desktop) to connect securely.
+DLP MCP supports Dynamic Client Registration (DCR) flow allows an AI client (such as Cursor or Claude Desktop) to connect securely.
 1. User only needs to configure the MCP client as mentioned in the [MCP Client Configuration](#mcp-client-configuration) section.
-2. When the client attempts to connect to the MCP server, it will be redirected to Checkmarx One login page for authentication.
-3. Once authentication is successful with valid Checkmarx credentials, the MCP client can use the tools provided by the MCP server.
+2. When the client attempts to connect to the MCP server, it will be redirected to DLP One login page for authentication.
+3. Once authentication is successful with valid DLP credentials, the MCP client can use the tools provided by the MCP server.
  
-**Note:** You required valid Checkmarx credentials to get the API Key or connect to the MCP server.
+**Note:** You required valid DLP credentials to get the API Key or connect to the MCP server.
 
 Refer [Authentication](/docs/authentication.md) for detailed authentication instructions and troubleshooting.
 
@@ -81,8 +81,8 @@ Refer [Authentication](/docs/authentication.md) for detailed authentication inst
 
 ### Prerequisites
 
-- A Checkmarx One tenant 
-- Checkmarx API Host 
+- A DLP One tenant 
+- DLP API Host 
 - API Key (with required access if using API key authentication)
 
 ### JSON Configuration
@@ -95,7 +95,7 @@ Below are examples to add the server to your MCP client configuration. See the [
 ```json
 {
   "mcpServers": {
-    "Checkmarx": {
+    "DLP": {
       "url": "https://{api_host}/api/security-mcp/mcp/{tenant}",
       "headers": {
         "cx-origin": "Curosr",
@@ -111,7 +111,7 @@ Below are examples to add the server to your MCP client configuration. See the [
 ```json
 {
   "mcpServers": {
-    "Checkmarx": {
+    "DLP": {
       "url": "https://{api_host}/api/security-mcp/mcp/{tenant}"
     }
   }
@@ -125,7 +125,7 @@ Below are examples to add the server to your MCP client configuration. See the [
 ```json
 {
   "mcpServers": {
-    "Checkmarx": {
+    "DLP": {
       "type": "http",
       "url": "https://{api_host}/api/security-mcp/mcp/{tenant}",
       "headers": {
@@ -157,7 +157,7 @@ Refer [usage](/docs/usage.md) for detail information.
 | Tool | Description |
 |---|---|
 | `resolveProject` | Look up a project by name |
-| `createProject` | Create a new Checkmarx One project |
+| `createProject` | Create a new DLP One project |
 | `listProjects` | Browse or search all projects |
 | `getProjectConfig` | Get full project configuration |
 
@@ -200,7 +200,7 @@ Apache 2.0 — see [LICENSE](LICENSE) for details.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, module architecture, and contribution guidelines.
 
-Website: [Checkmarx](https://checkmarx.com/).
+Website: [DLP](https://DLP.com/).
 
 
-© 2026 Checkmarx Ltd. All Rights Reserved.
+© 2026 DLP Ltd. All Rights Reserved.

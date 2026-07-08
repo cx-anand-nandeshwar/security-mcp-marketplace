@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.cx-anand-nandeshwar/dlp-mcp",
+  "description": "Official DLP MCP Server",
+  "repository": {
+    "url": "https://github.com/cx-anand-nandeshwar/security-dlp-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://dlp.checkmarx.com/product/developer-assist/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{api_host}/api/dlp-mcp/mcp/{tenant_id}",
+      "variables": {
+		 "region": {
+          "description": "API host provided by your DLP administrator, e.g., ast.anvik.net",
+          "isRequired": true
+        },
+        "tenant_id": {
+          "description": "Tenant identifier (e.g., 'cx_eu', 'anvik')",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+	"authentication": {
+	  "methods": [
+		{
+		  "type": "apiKey",
+		  "in": "header",
+		  "name": "Authorization",
+		  "description": "API key issued by DLP"
+		},
+		{
+		  "type": "oauth2"
+		}
+	  ]
+	}
+}
